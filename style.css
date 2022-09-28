@@ -504,7 +504,7 @@ main {
     /* надо поправить, видимо сделать через calc(), чтобы все было идеально */
     height: 90%;
     padding: 30px 25px;
-    background: linear-gradient(rgb(243, 241, 241), rgb(239, 238, 238));
+    background: linear-gradient(rgb(249, 249, 249), rgb(216, 213, 213));
 }
 .container::-webkit-scrollbar,
 .chat_messages::-webkit-scrollbar {
