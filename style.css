@@ -198,7 +198,7 @@ main {
 /* contacts_header */
 
 .contacts {
-    width: 30%;
+    width: 335px;
     padding: 30px 25px 0 25px;
     border-right: 2px solid rgba(214, 213, 213, .7);
 }
@@ -232,6 +232,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 285px;
     height: 40px;
     background: rgba(230, 230, 230, 0.7);
     border-radius: 10px;
@@ -457,6 +458,7 @@ main {
 
 .message-white-companion{
     border-radius: 10px 10px 10px 0; 
+    background: rgba(214, 213, 213, .7);
 }
 
 
@@ -493,7 +495,7 @@ main {
     /* padding: 30px 25px; */
 }
 .panel {
-    width: 5%;
+    width: 40px;
 }
 
 
