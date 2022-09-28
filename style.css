@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body,
+main,
+aside,
+.contacts,
+.chat,
+.panel {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* aside */
+
+
+aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(230, 230, 230, 0.7);
+    width: 200px;
+    padding: 30px 15px 40px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* aside_logo */
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo_text{
+    font-weight: 700;
+    margin-left: 15px;
+    letter-spacing: 1px;
+}
+
+.logo_img{
+    width: 40px;
+}
+
+/* aside_menu */
+
+
+.menu{
+    margin-bottom: 50px;
+}
+
+.menu_nav{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.menu_text{
+    margin-left: 25px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.menu_icon{
+    font-size: 24px;
+    font-weight: 800;
+    opacity: .6;
+}
+
+.menu_nav-active{
+    width: 185px;
+    height: 40px;
+    color: blue;
+    text-align: center;
+    background: white;
+    border-right: 5px solid orangered;
+    border-radius: 8px;
+}
+
+.menu_nav:hover:not(.menu_nav-active){
+    width: 185px;
+    height: 40px;
+    background: white;
+    color: blue;
+    border-right: 5px solid orangered;
+    border-radius: 8px;
+}
+
+.menu_nav,
+.menu_list_item{
+    height: 40px;
+}
+
+
+/* aside_projekt */
+
+
+.projekt_title{
+    opacity: .6;
+    letter-spacing: 1px;
+}
+
+.projekt_nav:hover{
+    color: blue;
+}
+
+
+.projekt_nav{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_list_item,
+.projekt_list_item{
+    list-style: none;
+}
+
+.projekt_border{
+    border: 2px solid;
+    border-radius: 40%;
+    width: 20px;
+    height: 20px;
+}
+
+.projekt_border-orange{
+    border-color: rgb(226, 83, 7);
+}
+
+.projekt_border-blue{
+    border-color: rgb(111, 111, 234);
+}
+
+.projekt_border-purple{
+    border-color: rgb(82, 10, 82)
+}
+
+.projekt_border-green{
+    border-color: rgb(132, 235, 132);
+}
+
+.projekt_title{
+    margin-bottom: 15px;
+}
+.projekt_button{
+    width: 170px;
+    height: 35px;
+    background: rgba(230, 230, 230, 0.7);
+    border: 2px solid rgba(214, 213, 213, .7);
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.projekt_text{
+    width: 100px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.projekt_amt{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(214, 213, 213, .7);
+    border-radius: 30%;
+    font-size: 10px;
+}
+
+
+/* main */
+
+
+main {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    display: flex;
+    background: linear-gradient(grey white);
+}
+
+/* contacts_header */
+
+.contacts {
+    width: 30%;
+    padding: 30px 25px 0 25px;
+    border-right: 2px solid rgba(214, 213, 213, .7);
+}
+
+.inbox,
+.chapters{
+    margin-bottom: 20px;
+}
+
+
+.inbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inbox_plus{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    border: 2px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapters{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background: rgba(230, 230, 230, 0.7);
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.General{
+    background: white;
+    width: 50%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.Total{
+    width: 50%;
+    text-align: center;
+}
+
+.Total:hover{
+    background: white;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* main_container */
+
+.container{
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.contacts_chat-active{
+    background: rgba(230, 230, 230, 0.7);
+    border-radius: 15px;
+}
+
+.contacts_chat{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 285px;
+    height: 80px;
+    margin-bottom: .5rem;
+}
+
+.contacts_chat:not(.contacts_chat-active){
+    border-bottom: 2px solid rgba(230, 230, 230, 0.3);
+}
+
+.contacts_chat_text{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts_amt{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+}
+
+.contacts_status{
+    opacity: .6;
+}
+
+.contacts_status,
+.contacts_message{
+    font-size: 13px;
+}
+
+.smiley{
+    width: 15px;
+}
+
+.contacts_chat_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    background: rgb(230, 227, 227);
+}
+
+.contacts_img{
+    position: relative;
+}
+
+.status{
+    width: 10px;
+    height: 10px;
+    background: green;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px white;
+    position: absolute;
+    top: 39px;
+    left: 39px;
+}
+
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(214, 213, 213, .7);
+    padding: 30px 25px 20px 25px;
+}
+
+
+.header_contact{
+    display: flex;
+    align-items: center;
+}
+
+.header_img{
+    position: relative;
+}
+
+.header_status-green{
+    width: 10px;
+    height: 10px;
+    background: green;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px white;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.header_contact_img{
+    width: 45px;
+    border-radius: 50%;
+    background: rgb(213, 210, 210);
+}
+
+.header_contact_text{
+    margin-left: 20px;
+}
+.header_name{
+    margin-bottom: 7px;
+}
+
+.header_status{
+    opacity: .5;
+}
+
+.header_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.header_button_voice-average{
+    margin: 0 10px;
+}
+
+.header_button_search{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(214, 213, 213, .7);
+    padding: 0 7px;
+}
+
+.header_button_voice{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(214, 213, 213, .7);
+    background: white;
+}
+
+.header_icon{
+    font-size: 20px;
+    opacity: .7;
+}
+
+
+
+
+.message-chat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-author{
+    margin-top: 30px;
+}
+
+.message-author{
+    text-align: right;
+}
+
+.message-diffuse{
+    opacity: .7;
+    font-size: 10px;
+}
+
+.message-data{
+    opacity: .7;
+}
+
+.message-white-author{
+    border-radius: 10px 10px 0 10px;
+}
+
+.message-white-companion{
+    border-radius: 10px 10px 10px 0; 
+}
+
+
+.message-white-author,
+.message-white-companion{
+    background: white;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.message-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.message_icon-doc{
+    font-size: 46px;
+}
+
+
+
+
+
+.chat {
+    border-right: 1px solid grey;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* padding: 30px 25px; */
+}
+.panel {
+    width: 5%;
+}
+
+
+.chat_messages {
+    overflow-y: scroll;
+    /* надо поправить, видимо сделать через calc(), чтобы все было идеально */
+    height: 90%;
+    padding: 30px 25px;
+    background: linear-gradient(rgb(243, 241, 241), rgb(239, 238, 238));
+}
+.container::-webkit-scrollbar,
+.chat_messages::-webkit-scrollbar {
+    display: none;
+}
+.header,
+.chat-bottom  {
+    height: 90px;
+}
+.message:not(.message-diffuse, .message-diffus) {
+    height: 20px;
+    /* background: blue; */
+    margin-bottom: 1rem;
+}
